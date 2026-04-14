@@ -10,6 +10,7 @@ body {
   color: #050505;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
+  scroll-behavior: smooth;
 }
 
 /* Encabezados */
@@ -101,4 +102,40 @@ button {
 
 button:hover {
   background-color: #333333;
+}
+
+.contact-section {
+  max-width: 700px;
+  margin: 0 auto 50px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section p {
+  margin-bottom: 15px;
+}
+
+#contactMessage {
+  margin-top: 15px;
+  color: #050505;
+  font-weight: bold;
+  text-align: center;
+}
+
+.focus-highlight {
+  animation: highlight-contact 2s ease-in-out;
+}
+
+@keyframes highlight-contact {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 235, 59, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 0 16px rgba(255, 235, 59, 0.15);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 235, 59, 0);
+  }
 }

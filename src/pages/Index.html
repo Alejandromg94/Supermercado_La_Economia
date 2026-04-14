@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./style/Index.css" />
+    <link rel="stylesheet" href="../css/Index.css" />
   </head>
   <body>
     <!-- Encabezado principal -->
@@ -12,9 +12,9 @@
 
     <!-- Barra de navegación -->
     <div class="nav">
-      <a href="#">Inicio</a>
-      <a href="#">Ofertas</a>
-      <a href="#">Contacto</a>
+      <a href="Index.html">Inicio</a>
+      <a href="Ofertas.html">Ofertas</a>
+      <a href="#contacto" id="contactLink">Contacto</a>
     </div>
 
     <!-- Sección de productos -->
@@ -23,22 +23,22 @@
     <!-- Cada producto con su imagen -->
     <p>
       Arroz
-      <img src="./style/img/Arroz.jpeg" alt="Arroz" />
+      <img src="../img/Arroz.jpeg" alt="Arroz" />
     </p>
 
     <p>
       Leche
-      <img src="./style/img/Leche.jpeg" alt="Leche" />
+      <img src="../img/Leche.jpeg" alt="Leche" />
     </p>
 
     <p>
       Pan
-      <img src="./style/img/Pan.jpeg" alt="Pan" />
+      <img src="../img/Pan.jpeg" alt="Pan" />
     </p>
 
     <p>
       Huevos
-      <img src="./style/img/Huevos.jpeg" alt="Huevos" />
+      <img src="../img/Huevos.jpeg" alt="Huevos" />
     </p>
 
     <!-- Tabla de precios -->
@@ -50,26 +50,31 @@
       </tr>
       <tr>
         <td>Arroz</td>
-        <td>2.500</td>
+        <td>2.500 $</td>
       </tr>
       <tr>
         <td>Huevos</td>
-        <td>19.000</td>
+        <td>19.000 $</td>
       </tr>
       <tr>
         <td>Leche</td>
-        <td>3.900</td>
+        <td>3.900 $</td>
       </tr>
       <tr>
         <td>Pan</td>
-        <td>20.000</td>
+        <td>20.000 $</td>
       </tr>
     </table>
 
     <!-- Formulario de contacto -->
-    <h2>Contacto</h2>
-    <input type="text" placeholder="Nombre" />
-    <input type="email" placeholder="Correo" />
-    <button>Enviar</button>
+    <section id="contacto" class="contact-section">
+      <h2>Contacto</h2>
+      <p>Haz clic en Contacto para bajar hasta aquí y escribirnos.</p>
+      <input id="nameInput" type="text" placeholder="Nombre" />
+      <input id="emailInput" type="email" placeholder="Correo" />
+      <button id="submitContact" type="button">Enviar</button>
+      <p id="contactMessage" class="hidden"></p>
+    </section>
+    <script src="../js/Index.js"></script>
   </body>
 </html>
