@@ -9,21 +9,21 @@ document.addEventListener("DOMContentLoaded", () => {
       title: "Oferta del día",
       description:
         "Hoy: 20% de descuento en arroz y pan. Precio especial por tiempo limitado.",
-      image: "./style/img/ofertas1.jpeg",
+      image: "/src/img/ofertas1.jpeg",
       alt: "Arroz y pan en oferta",
     },
     {
       title: "Oferta de miércoles",
       description:
         "Miércoles: 15% de descuento en productos de limpieza. Precio especial por tiempo limitado.",
-      image: "./style/img/ofertas 2.jpeg",
+      image: "/src/img/ofertas2.jpeg",
       alt: "Productos de limpieza en oferta",
     },
     {
       title: "Oferta de viernes",
       description:
         "Viernes: 10% en carne y pescado. Precio especial por tiempo limitado.",
-      image: "./style/img/ofertas de carnes.jpeg",
+      image: "/src/img/ofertas-carnes.jpeg",
       alt: "Carnes y pescados en oferta",
     },
   ];
