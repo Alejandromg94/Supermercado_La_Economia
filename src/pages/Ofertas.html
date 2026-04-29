@@ -5,25 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ofertas - Supermercado La Economia</title>
     <link rel="stylesheet" href="../css/Ofertas.css" />
+    <link rel="stylesheet" href="../css/output.css" />
   </head>
-  <body>
-    <h1>Ofertas</h1>
-    <nav>
+  <body
+    class="bg-blue-50 text-gray-800 flex flex-col items-center min-h-screen px-4 py-6"
+  >
+    <h1 class="text-3xl font-bold text-blue-600 mb-4">Ofertas</h1>
+    <nav class="nav flex gap-6 mb-8 bg-green-500 px-6 py-2 rounded-full shadow">
       <a href="Index.html">Inicio</a>
       <a href="Ofertas.html">Ofertas</a>
     </nav>
-    <section>
-      <h2>Promociones especiales</h2>
-      <div id="offerContainer">
-        <button id="toggleOfferBtn" type="button">
+    <section class="w-full max-w-2xl bg-white rounded-xl shadow p-6">
+      <h2 class="text-2xl font-semibold mb-8">Promociones especiales</h2>
+      <div class=" id="offerContainer">
+        <button
+          class="bg-green-500 hover:bg-amber-600 active:bg-amber-700 text-white font-medium py-2 px-6 rounded-lg transition shadow cursor-pointer"
+          id="toggleOfferBtn"
+          type="button"
+        >
           Mostrar oferta del día
         </button>
-        <button id="nextOfferBtn" type="button">Siguiente oferta</button>
+        <button class="bg-green-500 hover:bg-amber-600 active:bg-amber-700 text-white font-medium py-2 px-6 rounded-lg transition shadow cursor-pointer" id="nextOfferBtn" type="button">Siguiente oferta</button>
         <div id="offerDetails" class="hidden"></div>
       </div>
-      <p>
+      <p class=""bg-amber-500 hover:bg-green-600 active:bg-amber-700 text-white font-medium py-2 px-6 rounded-lg transition shadow cursor-pointer">
         Revisa nuestras ofertas actuales y vuelve a
-        <a href="Index.html">la página principal</a>.
+        <a class="" href="Index.html">la página principal</a>.
       </p>
     </section>
     <script src="../js/Ofertas.js"></script>

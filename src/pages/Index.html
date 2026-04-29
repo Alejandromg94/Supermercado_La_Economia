@@ -5,76 +5,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../css/Index.css" />
+    <link rel="stylesheet" href="../css/output.css" />
   </head>
-  <body>
-    <!-- Encabezado principal -->
-    <h1>Supermercado La Economia</h1>
+  <body
+    class="bg-blue-50 text-gray-800 flex flex-col items-center min-h-screen px-4 py-6"
+  >
+    <!-- Encabezado principal del sitio -->
+    <h1 class="text-3xl font-bold text-blue-600 mb-4">
+      Supermercado La Economia
+    </h1>
 
     <!-- Barra de navegación -->
-    <div class="nav">
-      <a href="Index.html">Inicio</a>
-      <a href="Ofertas.html">Ofertas</a>
-      <a href="#contacto" id="contactLink">Contacto</a>
+    <div class="nav flex gap-6 mb-8 bg-green-500 px-6 py-2 rounded-full shadow">
+      <a
+        href="Index.html"
+        class="text-white font-medium hover:text-amber-100 transition"
+        >Inicio</a
+      >
+      <a
+        href="Ofertas.html"
+        class="text-white font-medium hover:text-amber-100 transition"
+        >Ofertas</a
+      >
+      <a
+        href="#contacto"
+        id="contactLink"
+        class="text-white font-medium hover:text-amber-100 transition"
+        >Contacto</a
+      >
     </div>
 
-    <!-- Sección de productos -->
-    <h2>Productos</h2>
+    <!-- Sección de catálogo de productos -->
+    <h2 class="text-2xl font-semibold mb-4">Productos</h2>
 
-    <!-- Cada producto con su imagen -->
-    <p>
-      Arroz
-      <img src="../img/Arroz.jpeg" alt="Arroz" />
-    </p>
-
-    <p>
-      Leche
-      <img src="../img/Leche.jpeg" alt="Leche" />
-    </p>
-
-    <p>
-      Pan
-      <img src="../img/Pan.jpeg" alt="Pan" />
-    </p>
-
-    <p>
-      Huevos
-      <img src="../img/Huevos.jpeg" alt="Huevos" />
-    </p>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
+      <div class="flex flex-col items-center bg-white rounded-xl shadow p-3">
+        <img
+          src="../img/Arroz.jpeg"
+          alt="Arroz"
+          class="w-50 h-50 object-cover rounded-lg mb-2"
+        />
+        <span class="font-medium">Arroz</span>
+      </div>
+      <div class="flex flex-col items-center bg-white rounded-xl shadow p-3">
+        <img
+          src="../img/Leche.jpeg"
+          alt="Leche"
+          class="w-50 h-50 object-cover rounded-lg mb-2"
+        />
+        <span class="font-medium">Leche</span>
+      </div>
+      <div class="flex flex-col items-center bg-white rounded-xl shadow p-3">
+        <img
+          src="../img/Pan.jpeg"
+          alt="Pan"
+          class="w-50 h-50 object-cover rounded-lg mb-2"
+        />
+        <span class="font-medium">Pan</span>
+      </div>
+      <div class="flex flex-col items-center bg-white rounded-xl shadow p-3">
+        <img
+          src="../img/Huevos.jpeg"
+          alt="Huevos"
+          class="w-50 h-50 object-cover rounded-lg mb-2"
+        />
+        <span class="font-medium">Huevos</span>
+      </div>
+    </div>
 
     <!-- Tabla de precios -->
-    <h2>Precios</h2>
-    <table>
-      <tr>
-        <td>Producto</td>
-        <td>Precio</td>
-      </tr>
-      <tr>
-        <td>Arroz</td>
-        <td>2.500 $</td>
-      </tr>
-      <tr>
-        <td>Huevos</td>
-        <td>19.000 $</td>
-      </tr>
-      <tr>
-        <td>Leche</td>
-        <td>3.900 $</td>
-      </tr>
-      <tr>
-        <td>Pan</td>
-        <td>20.000 $</td>
-      </tr>
+    <h2 class="text-2xl font-semibold mb-3">Precios</h2>
+    <table
+      class="w-full max-w-sm bg-white rounded-xl shadow overflow-hidden mb-10"
+    >
+      <thead class="bg-green-500 text-white">
+        <tr>
+          <td class="px-4 py-2 font-semibold">Producto</td>
+          <td class="px-4 py-2 font-semibold">Precio</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="border-b hover:bg-amber-50">
+          <td class="px-4 py-2">Arroz</td>
+          <td class="px-4 py-2">2.500 $</td>
+        </tr>
+        <tr class="border-b hover:bg-amber-50">
+          <td class="px-4 py-2">Huevos</td>
+          <td class="px-4 py-2">19.000 $</td>
+                  <tr class="border-b hover:bg-amber-50">
+          <td class="px-4 py-2">leche</td>
+          <td class="px-4 py-2">5.600 $</td>
+        </tr>
+                <tr class="border-b hover:bg-amber-50">
+          <td class="px-4 py-2">pan</td>
+          <td class="px-4 py-2">19.000 $</td>
+        </tr>
+        </tr>
+      </tbody>
     </table>
-
-    <!-- Formulario de contacto -->
-    <section id="contacto" class="contact-section">
-      <h2>Contacto</h2>
-      <p>Haz clic en Contacto para bajar hasta aquí y escribirnos.</p>
-      <input id="nameInput" type="text" placeholder="Nombre" />
-      <input id="emailInput" type="email" placeholder="Correo" />
-      <button id="submitContact" type="button">Enviar</button>
-      <p id="contactMessage" class="hidden"></p>
-    </section>
-    <script src="../js/Index.js"></script>
+    <table class="w-full max-w-sm bg-white rounded-xl shadow overflow-hidden mb-10">Contactanos
+          <tr class="border-b hover:bg-amber-50">
+    <td class="px-4 py-2">telefono</td>
+    <td class="px-4 py-2">Dirrecion</td>
+  </tr>
+  <tr class=" border-b hover:bg-amber-50 ">
+  <td class="px-4 py-2 ">3234491548</td> 
+  <td class="px-4 py-2 ">Avenida 35A#44-45</td>
+</tr>
+    </table>
   </body>
 </html>

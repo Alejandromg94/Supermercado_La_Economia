@@ -1,0 +1,28 @@
+{
+  "name": "supermercado_la_economia",
+  "version": "1.0.0",
+  "description": "Carpeta raíz:",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./src/css/input.css -o ./src/css/output.css --minify",
+    "watch": "tailwindcss -i ./src/css/input.css -o ./src/css/output.css --watch",
+    "dev": "tailwindcss -i ./src/css/input.css -o ./src/css/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alejandromg94/Supermercado_La_Economia.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Alejandromg94/Supermercado_La_Economia/issues"
+  },
+  "homepage": "https://github.com/Alejandromg94/Supermercado_La_Economia#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.5.0",
+    "postcss": "^8.5.12",
+    "tailwindcss": "^4.2.4"
+  }
+}
